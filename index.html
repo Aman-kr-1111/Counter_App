@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Wrapper -->
+    <div class="bg-gray-900 text-white">
+      <div class="flex flex-col items-center justify-center h-screen">
+        <div class="mb-6">
+          <label for="changeBy" class="text-blue-300 text-xl font-medium"
+            >Increment/Decrement By :</label
+          >
+          <input
+            type="number"
+            id="changeBy"
+            class="text-center w-40 bg-gray-800 text-white border border-gray-600 rounded-md px-2 py-1 tex"
+            value="1"
+          />
+        </div>
+        <div class="bg-white flex items-center rounded-sm gap-12 px-5 py-3">
+          <button class="border-r-2 border-gray-600 pr-4" minusBtn>
+            <i class="fas fa-minus text-gray-600"></i>
+          </button>
+
+          <div class="font-bold text-4xl text-black" id="counter">0</div>
+
+          <button class="border-l-2 border-gray-600 pl-4" plusBtn>
+            <i class="fas fa-plus text-gray-600"></i>
+          </button>
+        </div>
+        <button
+          class="mt-6 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-md tracking-wide"
+          resetBtn
+        >
+          Reset
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/58a810656e.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
